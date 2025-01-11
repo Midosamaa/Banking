@@ -117,6 +117,10 @@ void traiter_commande(char *commande, char *reponse, int client_socket) {
         }
         pthread_mutex_unlock(&mutex);
     }
+    else {
+        printf("KO\n");
+        sprintf(reponse, "KO - Commande invalide");
+    }
 }
 
 void *handle_client(void *arg) {

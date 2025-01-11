@@ -54,6 +54,11 @@ int main() {
 
         buffer[bytes_received] = '\0';  // Null terminate the response
         printf("Réponse du serveur : %s\n", buffer);
+
+        // Handle 'KO' response
+        if (strncmp(buffer, "KO", 2) == 0) {
+            printf("Erreur dans la commande. Assurez-vous du format et des paramètres.\n");
+        }
     }
 
     close(client_socket);
