@@ -1,7 +1,7 @@
 
 # Bank Account Management System
 
-This is a simple bank account management system implemented using C, sockets, and multithreading. The system allows multiple clients to connect to the server and perform operations such as adding funds to an account, withdrawing funds, checking the balance, and viewing the last 10 operations for an account.
+This is a simple bank account management system implemented using C, TCP sockets, and multithreading. The system allows multiple clients to connect to the server and perform operations such as adding funds to an account, withdrawing funds, checking the balance, and viewing the last 10 operations for an account.
 
 ## Features
 - **Add Funds**: `AJOUT` command.
